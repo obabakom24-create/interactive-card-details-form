@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+   
+}
+
+body{
+    
+     height: 100vh;
+
+ 
+}
+
+.container{
+ display: flex;
+ position: relative;
+ font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  text-transform: uppercase; 
+ 
+}
+@media (max-width:996px){
+    .container{
+        display: grid;
+    
+    }
+
+}
+form {
+    
+    width: 100%;
+    display: grid;
+}
+
+ 
+.container form .box2{
+    
+    font-size: smaller;
+    width: 55%;
+    height: 420px;
+    margin-top: 200px;
+    justify-content: center;
+    padding-left: 200px;
+    display: grid;
+    border-radius: 7px;
+    scale: .9;
+    font-weight: 500; 
+   
+}
+
+@media (max-width:996px){
+    .container form  .box2{
+          margin-top: 40px;
+          padding-left: 5px;
+          width: 100%;
+    }
+     .container form  .box1{
+        
+        height: 400px;
+     }
+     .container  .box1 .img-bx1{
+         display: none;
+
+     }
+     .container   .box1{
+        background-image: url(images/bg-main-mobile.png);
+        background-size:cover ;
+        width: 100%;
+        height:285px ;
+     }
+}
+
+.container form  .box2 .card-inputs{
+   
+   display: grid;
+   align-content: center;
+   justify-content: center;
+   padding: 5px;
+   scale: 1.2;
+   height: 300px;
+   color: hsl(278, 68%, 11%);
+
+}
+
+
+.container form  .box2 .card-inputs .date{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    
+     
+    
+}
+.container form  .box2 .card-inputs input{
+    height:40px;
+    padding-left: 10px;
+     border-radius: 4px;
+     border: solid 0.1px;
+     
+}
+.container form  .box2 .card-inputs input:invalid:not(:placeholder-shown){
+     border-color: red;
+     background-image: url(images/invalid-removebg-preview.png);
+    background-size: 15px;
+    background-repeat: no-repeat;
+    background-position: calc(100% - 10px);
+}
+.container form  .box2 .card-inputs input:valid:not(:placeholder-shown){
+    border-color: rgb(0, 138, 0);
+      background-image: url(images/valid-removebg-preview.png);
+    background-size: 15px;
+    background-repeat: no-repeat;
+    background-position: calc(100% - 10px);
+    
+}
+
+form .erorre-name{
+   font-size: 10px;
+   opacity: .8;
+   color: gray;
+   margin-top: 5px;
+   
+}
+
+input:invalid:not(:placeholder-shown) + span{
+   color: red;
+    border-color: red;
+}
+
+input:invalid ~ button[type="submit"]{
+    opacity: .6;
+    pointer-events: none;
+}
+
+.container form  .box2 .card-inputs  p{
+    margin-bottom: 5px;
+    margin-top: 10px;
+    
+}
+.container form  .box2 .card-inputs .date .mm{
+  width: 60px;
+ 
+}
+.container form  .box2 .card-inputs .date .yy{
+        width: 60px;
+        margin-left: 10px;
+        
+}
+
+.container form  .box2 .confirm{
+    width: 100%;
+    height: 53px;
+    background:hsl(278, 68%, 11%);
+    color: white;
+    border: none;
+    font-weight: 500;
+    font-size: 18px;
+    border-radius: 7px;
+    margin-top: 10px;
+    text-transform: capitalize;
+   
+}
+
+
+
+.container form  .box2 .confirm:hover{
+    background:hsl(278, 28%, 22%) ;
+}
+
+.container  .cards {
+  position: absolute;
+  left: 200px;
+  top: 150px;
+  border-radius: 6px;
+}
+
+.container  .card1{
+    left: 120px;
+    
+}
+
+.container .logo-card{
+    left: 35px;
+    top: 25px;
+    position: absolute;
+    
+}
+.container .number-card{
+    position: absolute;
+    letter-spacing: 2px;
+     bottom:80px;
+     left: 70px;
+     color: white;
+      word-spacing: 8px;
+}
+.container .card1 h5{
+    position: absolute;
+     bottom: 30px;
+     left: 70px;
+     color: white;
+      word-spacing: 8px;
+
+    
+}
+.container .card1 h5::after{
+    content: " 00/00";
+    left: 290px;
+    position: absolute;
+}
+
+
+.container  .card2{
+    top:460px
+     
+}
+.container  .card2:hover , .card1:hover{
+    transition: 500ms;
+    scale: 1.1;
+}
+@media (max-width:996px){
+    .container  .card2:hover{
+    transition: 0ms;
+    scale: 0.7;
+}
+    .container  .card1:hover{
+    transition: 0ms;
+    scale: 0.7;
+}
+}
+
+.container  .card2 h4{
+    position: absolute;
+    bottom: 117px;
+    right:50px ;
+    color: white;
+    letter-spacing: 2px;
+   
+   
+}
+
+@media (max-width:996px){
+    .container  .card2{
+        top:20px ;
+        left: 40px;
+        scale: 0.7;
+        
+    }
+    .container  .card1{
+        top:120px ;
+        left: 0px;
+        right: 200px;
+        scale: 0.7;
+        z-index: 1;
+        
+        
+    }
+    .container .number-card{
+        width: 350px;
+    }
+}
+

@@ -1,2 +1,5 @@
-# interactive-card-details-form
-interactive-card-details-form-main,
+# Frontend Mentor - Interactive card details form
+
+![Design preview for the Interactive card details form coding challenge](preview.jpg)
+
+## Welcome! 👋

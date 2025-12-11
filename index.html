@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="index.css">
+  
+  <title>Frontend Mentor | Interactive card details form</title>
+
+
+  
+</head>
+<body>
+
+
+  <div class="container">
+    <div class="box1">
+      <img class="img-bx1" src="images/bg-main-desktop.png" alt="">
+    </div>
+    
+   <form action="">
+
+     <div class="box2">
+      <div class="card-inputs">
+        <p>Cardholder Name</p>
+        <input class="Cardholder Name" type="text" minlength="6" required placeholder="e.g. Jane Appleseed">
+        <span class="erorre-name">Please lengthen this text to X characters or more</span>
+        <p> Card Number</p>
+        <input class="input-number" type="text"  oninput="this.value = this.value.replace(/[^0-9]/g, '');" 
+        
+        inputmode="numeric"  pattern="[0-9]{16}"  minlength="16" maxlength="16" required placeholder=" e.g. 1234 5678 9123 0000">
+        
+        
+
+        <exp class="date">
+          <div class="exp-date">
+            <p class="exp-text"> Exp. Date (MM/YY)</p>
+          <input class="mm" type="text" minlength="2" maxlength="4" required placeholder="MM">
+          
+          <input class="yy" type="text" minlength="2" maxlength="4" required placeholder="yy">
+          </div>
+         <div class="cvc">
+           <p> cvc</p>
+          <input  type="text" minlength="3" maxlength="3" required placeholder="e.g. 123">
+        
+         </div>
+        
+      </div>
+        <input class="confirm" type="submit" value="confirm">
+
+    </div>
+   </form>
+
+    <div class="card1 cards">
+      <img src="images/bg-card-front.png" alt="">
+      <img class="logo-card" src="images/card-logo.svg" alt="">
+      <h2 class="number-card">0000 0000 0000 0000 </h2>
+      <h5>  Jane Appleseed </h5>
+    </div>
+     <div class="card2 cards">
+       <img src="images/bg-card-back.png" alt="">
+       <h4>000</h4>
+     </div>
+  </div>
+
+ 
+
+ 
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">zakariya el onsri</a>.
+  </div>
+</body>
+</html>
